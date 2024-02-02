@@ -102,6 +102,7 @@ public:
 };
 
 // Inherited from Math & Calculator...
+
 class ScientificCalculator : public Calculator, public Math
 {
 public:
@@ -173,6 +174,7 @@ public:
 };
 
 // Driver programme...
+
 int main()
 {
     int mode;
