@@ -36,7 +36,6 @@ public:
         // change = 1005;
         // pub = 255;
         // cout << "Derived class method invoked "<<pub <<" & " <<change;
-
         val = 69;
         cout<<val<<endl;
     }
@@ -48,7 +47,6 @@ int main()
 {
     Base obj1;
     Derived obj2;
-
     // obj2.display();
     obj2.displayVar();
     // obj1.display(); //Now we can access the private variable...
