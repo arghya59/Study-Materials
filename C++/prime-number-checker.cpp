@@ -1,25 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-//Driver programme...
-int main(){
-    int n;
-    bool flag = true;
-    cout<<"Enter your number: ";
-    cin>>n;
-    if(n==0 || n==1){
-        cout<<n<<" is not a Prime Number";
-    }
+bool isPrime(int n){
+    if(n == 0 || n==1) return false;
     for(int i=2; i<n; i++){
-        if(n % i == 0){
-             flag = false;
-             break;
-        }
+        if(n % i == 0) return false;
     }
+    return true;
+}
 
-    if(flag == true) cout<<n<<" is a Prime number";
-    
-    else cout<<n<<" is not a Prime number";
-
+int main() {
+    int number;
+    cout<<"Enter the number:";
+    cin>>number;
+    if(isPrime(number) == true ) cout<<number<<" is a Prime number";
+    else cout<<number<<" is not a Prime number";
     return 0;
 }
